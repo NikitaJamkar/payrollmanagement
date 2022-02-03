@@ -1,0 +1,65 @@
+package species;
+//java bean
+public class Product {
+	private String productCode;
+	private String name;
+	 private int quantityOnHand;
+	 private double sellingPrice;
+// no-arg cons
+	public Product() {
+		super();
+	}
+
+	public Product(String productCode, String name, int quantityOnHand, double sellingPrice) {
+	super();
+	this.productCode = productCode;
+	this.name = name;
+	this.quantityOnHand = quantityOnHand;
+	this.sellingPrice = sellingPrice;
+}
+
+	public String getProductCode() {
+		return productCode;
+	}
+
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getQuantityOnHand() {
+		return quantityOnHand;
+	}
+
+	public void setQuantityOnHand(int quantityOnHand) {
+		this.quantityOnHand = quantityOnHand;
+	}
+
+	public double getSellingPrice() {
+		return sellingPrice;
+	}
+
+	public void setSellingPrice(double sellingPrice) {
+		this.sellingPrice = sellingPrice;
+	}
+
+	public void setPrice(int nextInt) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public int getPrice() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+
+}

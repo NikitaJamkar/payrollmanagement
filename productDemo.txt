@@ -1,0 +1,38 @@
+package species;
+
+import java.util.Scanner;
+
+public class ProductDemo {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		// creating product object
+		Product p=new Product();
+		//setting properties 
+      p.setName(sc.next());
+      p.setPrice(sc.nextInt());
+      p.setProductCode(sc.next());
+      p.setQuantityOnHand(sc.nextInt());
+      p.setSellingPrice(sc.nextInt());
+      ProfitOrLoss(p);
+      
+	}
+	public static void ProfitOrLoss (Product p)
+	{
+		double costPrice=50;
+		double cost=p.getPrice()*p.getQuantityOnHand();
+				double Profit=p.getSellingPrice()-costPrice;
+		
+		double loss = costPrice-p.getSellingPrice();
+		
+		if(Profit>cost)
+		{
+			System.out.println(Profit);
+		}
+		else
+		{
+			System.out.println(Math.abs(loss));
+		}
+	}
+}
